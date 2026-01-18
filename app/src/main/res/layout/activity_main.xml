@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/iVMain"
+        android:id="@+id/image"
         android:layout_width="335px"
         android:layout_height="175px"
         app:layout_constraintBottom_toTopOf="@+id/button"
