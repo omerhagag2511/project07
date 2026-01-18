@@ -16,11 +16,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        image = findViewById(R.id.image);
 
     }
-    image = findViewById(R.id.image);
-
     public void go(View view) {
-
+        int num = (int) (Math.random() * 3);
+        if (num == 2){
+            image.setImageResource(R.drawable.image3);
+        }
+        else if (num == 1){
+            image.setImageResource(R.drawable.image2);
+        }
+        else{
+            image.setImageResource(R.drawable.image1);
+        }
     }
 }
